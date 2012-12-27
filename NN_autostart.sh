@@ -15,14 +15,14 @@ tmux send-keys -tNewzNab:0 'cd /var/www/newznab/misc/sphinx' C-m
 tmux send-keys -tNewzNab:0 './nnindexer.php daemon' C-m
 sleep 3
  
-#NewzNab Windows
+#NewzNab Panes
 tmux send-keys -tNewzNab:0 'cd /var/www/newznab/misc/update_scripts/nix_scripts/' C-m
 tmux send-keys -tNewzNab:0 'sh newznab_screen_backfill.sh' C-m
 tmux splitw -h -p 50
 tmux send-keys -tNewzNab:0 'cd /var/www/newznab/misc/update_scripts/' C-m
 tmux send-keys -tNewzNab:0 'php justpostprocessing.php' C-m
  
-#Monitoring Windows
+#Monitoring Panes
 tmux select-pane -t 0
 tmux splitw -v -p 50
 tmux send-keys -tNewzNab:0 'top' C-m
