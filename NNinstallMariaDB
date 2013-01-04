@@ -115,6 +115,7 @@ service mysql start
 service apache2 stop
 service mysql stop
 
+mkdir /home/newznab/sitedl
 wget -O /home/newznab/sitedl http://bandofbrothers.3owl.com/nn/newznab
 mv /home/newznab/sitedl /etc/apache2/sites-available/newznab
 
