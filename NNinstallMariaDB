@@ -118,6 +118,7 @@ service mysql stop
 mkdir /home/newznab/sitedl
 wget -O /home/newznab/sitedl http://bandofbrothers.3owl.com/nn/newznab
 mv /home/newznab/sitedl /etc/apache2/sites-available/newznab
+rmdir /home/newznab/sitedl
 
 wget -O /home/php.ini http://bandofbrothers.3owl.com/nn/apache/php.ini
 mv /home/php.ini /etc/php5/apache2/php.ini
