@@ -1,6 +1,5 @@
-#!/bin/bash
-#The following script was submitted by Zombu2 in the IRC channel. Please see him for any support issues.
 
+#!/bin/bash
 clear
 echo "This installs newznab apache sql sphinx mediainfo ffmpeg and everything that is needed to your ubuntu install."
 echo "Please Hit Enter when the script asks you to hit Enter to add the repos."
